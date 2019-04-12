@@ -1,6 +1,6 @@
 FROM ubuntu:18.04
 
-LABEL author="felipedemacedo"
+LABEL author="felipederodrigues"
 
 RUN apt-get update && apt-get install -y software-properties-common 
 RUN add-apt-repository -y ppa:alex-p/tesseract-ocr
