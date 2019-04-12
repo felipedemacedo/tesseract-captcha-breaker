@@ -15,7 +15,7 @@ docker pull felipederodrigues/tesseract-captcha-breaker:latest
    
 3. Run the following command:
 ```java
-docker run --rm -v ./input:/in -v ./output:/out felipederodrigues/tesseract-captcha-breaker:latest bash -c "tesseract /in/captcha.svl /out/result --psm 10 --oem 3 -c tessedit_char_whitelist=1234567890"
+docker run --rm -v $(pwd)/input:/in -v $(pwd)/output:/out felipederodrigues/tesseract-captcha-breaker:latest bash -c "tesseract /in/captcha.svl /out/result --psm 10 --oem 3 -c tessedit_char_whitelist=1234567890"
 ```
 ----------
 You may customize the captcha command according to your needs.
